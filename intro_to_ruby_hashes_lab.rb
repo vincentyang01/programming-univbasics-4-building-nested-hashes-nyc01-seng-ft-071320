@@ -46,8 +46,8 @@ def monopoly_with_fourth_tier
   # they'll guide you in how to modify what you just did to have more
   # complexity.
   base = {
-    :railroads => {},
-    :pieces => "4",
+    :railroads => {
+      :pieces => "4",
     :rent_in_dollars => {
       :one_piece_owned => 25,
       :two_pieces_owned => 50,
@@ -68,5 +68,7 @@ def monopoly_with_fourth_tier
         :mortgage_value => 800
       }
     }
+    },
+    
   }
 end
